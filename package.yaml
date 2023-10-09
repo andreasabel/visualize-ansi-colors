@@ -1,0 +1,38 @@
+## NB: Scaffolding by `stack new visualize-ansi-colors simple-hpack`
+
+name:                visualize-ansi-colors
+version:             0.0.20231009
+synopsis:            Print a table of ANSI colors foreground on background
+description:         A small tool to visualize how something printed in a any ANSI foreground color
+                     would look like on any ANSI background color.
+homepage:            https://github.com/andreasabel/ansi-colors
+license:             BSD-3-Clause
+author:              Andreas Abel
+maintainer:          Andreas Abel
+copyright:           Andreas Abel, 2023
+category:            Terminal
+extra-source-files:
+  - README.md
+  - CHANGELOG.md
+
+dependencies:
+  - ansi-terminal-types
+  - ansi-terminal
+  - base >= 4.12 && < 5
+  - containers
+
+ghc-options:
+  - -Wall
+  - -Wcompat
+  - -Widentities
+  - -Wincomplete-record-updates
+  - -Wincomplete-uni-patterns
+  - -Wmissing-export-lists
+  - -Wmissing-home-modules
+  - -Wpartial-fields
+  - -Wredundant-constraints
+
+executables:
+  visualize-ansi-colors:
+    source-dirs:      src
+    main:             Main.hs
